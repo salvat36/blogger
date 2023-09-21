@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Threads",
-  description: "A Next.js 13 Meta Threads App.",
+  description: "A Next.js 13 Meta Threads application.",
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>{children}
         <Topbar />
 
         <main>
@@ -40,6 +40,7 @@ export default function RootLayout({
 
 
         <Bottombar />
+        </body>
       </html>
     </ClerkProvider>
   );
